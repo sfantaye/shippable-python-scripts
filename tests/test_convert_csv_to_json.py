@@ -1,4 +1,9 @@
 # tests/test_convert_csv_to_json.py
+#This test:
+#Creates a temp CSV file with sample data.
+#Converts it to JSON using your script.
+#Loads the JSON and checks the data is as expected.
+#Cleans up temporary files after testing.
 
 import os
 import json
