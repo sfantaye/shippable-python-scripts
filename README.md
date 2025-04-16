@@ -1,4 +1,4 @@
-🚀 Shippable Python Scripts
+🚀 Shippable Python Scripts With Tests
 By Sintayehu Fantaye
 
 A modular collection of ready-to-use Python scripts for automating tasks across Django, Flask, FastAPI, AI, and more.
