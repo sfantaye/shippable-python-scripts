@@ -1,1 +1,47 @@
+[tool.poetry]
+name = "ai-automation-suite"
+version = "0.1.0"
+description = "Powerful AI-driven automation and deployment toolkit."
+authors = ["Sintayehu Fantaye <santafantaye@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "scripts" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+openai = "^1.14.2"
+tqdm = "^4.66.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.1.1"
+pytest-mock = "^3.12.0"
+black = "^24.3.0"
+flake8 = "^7.0.0"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
 
